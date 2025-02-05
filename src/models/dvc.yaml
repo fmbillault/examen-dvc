@@ -1,0 +1,8 @@
+stages:
+  split:
+    cmd: python src/models/01_split_train.py
+    deps:
+    - src/data/raw_data/raw.csv
+    - src/models/01_split_train.py
+    outs:
+    - src/data/preprocessed
